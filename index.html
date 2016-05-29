@@ -1,1 +1,8 @@
 # thequotecollector.github.io
+
+{% for quote in site.quotes %}
+  <div>
+      <h3><a href="{{ quote.source_url }}" target="_blank">{{ quote.title }}</a></h3>
+      <blockquote>{{ quote.content }}</blockquote>
+  </div>
+{% endfor %}
