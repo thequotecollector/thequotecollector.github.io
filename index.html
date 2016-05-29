@@ -1,11 +1,30 @@
 ---
 ---
 
-# thequotecollector.github.io
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>The Quote Collector</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% for quote in site.quotes %}
-  <div>
-      <h3><a href="{{ quote.source_url }}" target="_blank">{{ quote.title }}</a></h3>
-      <blockquote>{{ quote.content }}</blockquote>
-  </div>
-{% endfor %}
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <h1>The Quote Collector</h1>
+
+        {% for quote in site.quotes %}
+          <div>
+            <h3><a href="{{ quote.source_url }}" target="_blank">{{ quote.title }}</a></h3>
+              <blockquote>{{ quote.content }}</blockquote>
+          </div>
+        {% endfor %}
+
+    </body>
+</html>
