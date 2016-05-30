@@ -1,0 +1,46 @@
+html {
+    background: #1badea;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+blockquote {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+}
+
+blockquote p:last-child {
+    margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.entry {
+    margin-bottom: 4em;
+}
+
+.entry-title {
+    font-size: 1.25em;
+    font-weight: 900;
+    margin: 0;
+}
+
+.entry-date {
+    font-size: 0.75em;
+    font-weight: 100;
+}
