@@ -7,4 +7,4 @@ date  : 2015-09-04
 words : ["looks good", minimalistic, "that's it!", "very simple", great, mysterious, cool, perfectly, "try it out!"]
 ---
 
-"Pitch Black Wallpaper is a great app that you'll have no trouble using, and will definitely help with your Android device's performance and battery drain. Don't think about it - try it out!" (Download3K Excellent Award and Five Stars Rating)
+"Pitch Black Wallpaper is a great app that you'll have no trouble using, and will definitely help with your Android device's performance and battery drain. Don't think about it - try it out!" (Download3K Excellent Award)
