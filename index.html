@@ -13,42 +13,85 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,900,500,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=IM+Fell+English' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/simple-grid.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+<body>
+
+    <div class="jumbotron">
         <div class="container">
-            <h1>The Quote Collector</h1>
-
-            <h2>{{ site.reviews.size }} Media Reviews</h2>
-
-            {% for review in site.reviews %}
-            <div class="entry">
-                <h3 class="entry-title"><a href="{{ review.link }}" target="_blank">{{ review.title }}</a></h3>
-                <div class="entry-content">
-                    <blockquote>{{ review.content }}</blockquote>
-                </div>
-                <div class="entry-meta">
-                    <time class="entry-date">{{ review.date | date: "%b %-d, %Y" }}</time>
+            <div class="row">
+                <div class="col-12 center">
+                    <div class="img img-logo center"></div>
+                    <h1>The Quote Collector</h1>
+                    <h2 class="font-light">I create programs.<br />I collect quotes about them.</h2>
+                    <a href="http://www.horatiu.me" target="_blank">
+                        <button>About Me</button>
+                    </a>
                 </div>
             </div>
-            {% endfor %}
-
-            <h2>{{ site.testimonials.size }} User Testimonials</h2>
-
-            {% for testimonial in site.testimonials %}
-            <div class="entry">
-                <h3 class="entry-title">{{ testimonial.title }}</h3>
-                <div class="entry-content">
-                    <blockquote>{{ testimonial.content }}</blockquote>
-                </div>
-                <div class="entry-meta">
-                    <time class="entry-date">{{ testimonial.date | date: "%b %-d, %Y" }}</time>
-                </div>
-            </div>
-            {% endfor %}
         </div>
-    </body>
+    </div>
+
+    <div class="body-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 hidden-sm"></div>
+                <div class="col-8">
+                    <h2 class="section-title center">{{ site.reviews.size }} Media Reviews</h2>
+                    {% for review in site.reviews %}
+                    <div class="entry">
+                        <h3 class="entry-title center"><a href="{{ review.link }}" target="_blank">{{ review.title }}</a></h3>
+                        <div class="entry-content">
+                            <blockquote>{{ review.content }}</blockquote>
+                        </div>
+                        <div class="entry-meta">
+                            <time class="entry-date">{{ review.date | date: "%b %-d, %Y" }}</time>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-2 hidden-sm"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2 hidden-sm"></div>
+                <div class="col-8">
+                    <h2 class="section-title center">{{ site.testimonials.size }} User Testimonials</h2>
+                    {% for testimonial in site.testimonials %}
+                    <div class="entry">
+                        <h3 class="entry-title center">{{ testimonial.title }}</h3>
+                        <div class="entry-content">
+                            <blockquote>{{ testimonial.content }}</blockquote>
+                        </div>
+                        <div class="entry-meta">
+                            <time class="entry-date">{{ testimonial.date | date: "%b %-d, %Y" }}</time>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-2 hidden-sm"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="img img-logo"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>The Quote Collector<br/>
+                    Collected by <a href="http://www.horatiu.me" target="_blank">horatiu.me</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

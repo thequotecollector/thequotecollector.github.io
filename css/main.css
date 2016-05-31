@@ -1,4 +1,105 @@
-html {
+* {
+  color: #636366;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p:last-child {
+    margin: 0;
+}
+
+button {
+  height: 48px;
+  width: 180px;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+button:hover {
+  background: #fff;
+  color: #1BADEA;
+}
+
+button:active {
+  outline: none;
+}
+
+
+
+.jumbotron {
+    background: #1BADEA;
+    background-image: linear-gradient(#000, #1BADEA);
+    height: 600px;
+    width: 100%;
+    z-index: 100 !important;
+}
+
+.jumbotron h1, .jumbotron h2 {
+    color: #fff;
+}
+
+.container {
+    padding-top: 6.25rem;
+}
+
+.section-title {
+    margin-bottom: 3rem;
+}
+
+
+.entry {
+    margin-bottom: 3em;
+}
+
+.entry-title {
+    margin-bottom: 3rem;
+}
+
+.entry-date {
+    color: #D6D6D8;
+    font-size: 0.875rem;
+}
+
+/* -------------------------
+ * Footer
+ * -------------------------*/
+
+footer {
+    background: #1BADEA;
+    background-image: linear-gradient(#1BADEA, #000);
+    margin-top: 6.25rem;
+    padding-bottom: 5rem;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer p {
+    color: #fff;
+}
+
+/*html {
     background: #1badea;
     color: rgba(255, 255, 255, 0.9);
     font-family: 'Roboto', sans-serif;
@@ -30,17 +131,9 @@ blockquote p:last-child {
   max-width: 600px;
 }
 
-.entry {
-    margin-bottom: 4em;
-}
 
-.entry-title {
-    font-size: 1.25em;
-    font-weight: 900;
-    margin: 0;
-}
 
 .entry-date {
     font-size: 0.75em;
     font-weight: 100;
-}
+}*/
