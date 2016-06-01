@@ -1,0 +1,10 @@
+---
+title : Softpedia about LoneColor
+app   : LoneColor
+by    : Softpedia
+link  : http://mobile.softpedia.com/android/LoneColor-Android-Review-1485.html
+date  : 2014-12-23
+words : [simplicity, smaller, clever, simplistic, "cleverly designed"]
+---
+
+"One of the most simplistic and cleverly designed apps we've seen in a long time." (Softpedia Excellent Award)
