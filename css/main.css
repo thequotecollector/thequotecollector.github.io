@@ -57,12 +57,14 @@ button:active {
 }
 
 .section-title {
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
 }
 
 
 .entry {
-    margin-bottom: 3em;
+    margin-bottom: 4.5em;
+/*    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem; */
 }
 
 .entry-title {
