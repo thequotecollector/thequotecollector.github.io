@@ -15,10 +15,6 @@ blockquote {
     margin: 0;
 }
 
-blockquote p:last-child {
-    margin: 0;
-}
-
 button {
   height: 48px;
   width: 180px;
@@ -70,7 +66,8 @@ button:active {
 }
 
 .entry-title {
-    margin-bottom: 3rem;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
 }
 
 .entry-date {
@@ -81,7 +78,7 @@ button:active {
 .wordlist {
     font-size: 1.125rem;
     font-weight: 200;
-    line-height: 1.8;    
+    line-height: 1.8;
 }
 
 .wordlist li {

@@ -12,7 +12,6 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/simple-grid.css">
         <link rel="stylesheet" href="css/main.css">
@@ -54,12 +53,16 @@
             <div class="row">
                 <div class="col-2 hidden-sm"></div>
                 <div class="col-8">
-                    <h2 class="section-title center">Media Reviews</h2>
+                    <h2 class="section-title center">Reviews</h2>
                     {% for review in site.reviews %}
                     <div class="entry">
-                        <h3 class="entry-title center"><a href="{{ review.link }}" target="_blank">{{ review.title }}</a></h3>
                         <div class="entry-content">
-                            <blockquote>{{ review.content }}</blockquote>
+                            <blockquote>
+                                <p>
+                                    <strong><a href="{{ review.link }}" target="_blank">{{ review.by }} / {{ review.app }}</a></strong>:
+                                    {{ review.content }}
+                                </p>
+                            </blockquote>
                         </div>
                     </div>
                     {% endfor %}
@@ -72,12 +75,16 @@
             <div class="row">
                 <div class="col-2 hidden-sm"></div>
                 <div class="col-8">
-                    <h2 class="section-title center">User Testimonials</h2>
+                    <h2 class="section-title center">Testimonials</h2>
                     {% for testimonial in site.testimonials %}
                     <div class="entry">
-                        <h3 class="entry-title center">{{ testimonial.title }}</h3>
                         <div class="entry-content">
-                            <blockquote>{{ testimonial.content }}</blockquote>
+                            <blockquote>
+                                <p>
+                                    <strong>{{ testimonial.by }} / {{ testimonial.app }}</strong>:
+                                    {{ testimonial.content }}
+                                </p>
+                            </blockquote>
                         </div>
                     </div>
                     {% endfor %}
