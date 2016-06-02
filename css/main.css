@@ -8,7 +8,7 @@ a {
 }
 
 a:hover {
-  text-decoration: line-through;
+    border-bottom: 1px dotted #636366;
 }
 
 blockquote {
@@ -57,7 +57,7 @@ button:active {
 }
 
 .section-title {
-    margin-bottom: 4.5rem;
+    margin: 0 0 4.5rem 0;
 }
 
 

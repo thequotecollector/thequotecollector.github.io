@@ -51,6 +51,20 @@
 
         <div class="container">
             <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title center">From</h2>
+                    <ul class="wordlist">
+                        {% for country in site.data.countries %}
+                        <li>{{ country }}</li>,
+                        {% endfor %}
+                        ...
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
                 <div class="col-2 hidden-sm"></div>
                 <div class="col-8">
                     <h2 class="section-title center">Reviews</h2>
@@ -106,7 +120,7 @@
                     <img src="img/quote.svg" width="76" alt="Quote symbol" />
                     <p>The Quote Collector<br/>
                     Collected by <a href="http://www.horatiu.me" target="_blank">horatiu.me</a></p>
-                    <p>{{ site.data.words.size}}, {{ site.reviews.size }}, {{ site.testimonials.size }}</p>
+                    <p>{{ site.data.words.size}}, {{ site.data.countries.size}}, {{ site.reviews.size }}, {{ site.testimonials.size }}</p>
                 </div>
             </div>
         </div>
